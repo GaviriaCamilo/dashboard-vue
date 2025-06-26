@@ -2,7 +2,7 @@
 
 ## 📋 Descripción del Proyecto
 
-Este proyecto es una implementación de una aplicación web desarrollada con **Vue.js** como parte de una prueba técnica para la posición de Desarrollador Junior Full Stack. La aplicación replica un diseño específico proporcionado en Figma, enfocándose en demostrar habilidades de maquetación y desarrollo frontend.
+Este proyecto es una implementación de una aplicación web desarrollada con **Vue.js** como parte de una prueba técnica para la posición de Desarrollador Junior Full Stack. La aplicación replica un diseño específico proporcionado en Figma, enfocándose en demostrar habilidades de maquetación y desarrollo frontend. Demo: https://camilogaviria.netlify.app/
 
 ## 🚀 Tecnologías Utilizadas
 
