@@ -13,10 +13,10 @@
 
             <div class="md:col-span-2">
                 <div class="flex border border-gray-300 rounded-xl overflow-hidden">
-                <div class="flex items-center px-3 py-2 bg-gray-50 border-r border-gray-300 space-x-1">
-                    <img src="https://flagcdn.com/16x12/ca.png" alt="Canada" class="w-4 h-3 object-cover" />
-                    <span class="text-sm">+1</span>
-                </div>
+                    <div class="flex items-center px-3 py-2 bg-gray-50 border-r border-gray-300 space-x-1">
+                        <img src="https://flagcdn.com/16x12/ca.png" alt="Canada" class="w-4 h-3 object-cover" />
+                        <span class="text-sm">+1</span>
+                    </div>
                 <input type="tel" placeholder="Phone number"
                     class="flex-1 px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
@@ -34,13 +34,12 @@
                 class="w-full px-3 py-3 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
             </div>
 
-            <input type="text" placeholder="IMEI" class="px-3 py-3 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
-            <button class="flex items-center justify-center px-2 py-3 bg-white border border-red-500 text-red-500 rounded-xl hover:bg-red-50 transition-colors text-sm">
-                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"clip-rule="evenodd" />
-                </svg>
-                Clear
-            </button>
+            <div class="md:col-span-2 flex gap-4"> 
+                <input type="text" placeholder="IMEI" class="flex-1 px-2 py-2 border border-gray-300 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+                <button class="flex items-center justify-center px-8 py-2 bg-white border border-red-500 text-red-500 rounded-xl hover:bg-red-50 transition-colors text-sm whitespace-nowrap">
+                    <i class="mdi mdi-delete-outline text-lg mr-1"></i> Clear
+                </button>
+            </div>
         </div>
     </div>
 </template>
