@@ -2,7 +2,11 @@
 
 ## 📋 Descripción del Proyecto
 
+<<<<<<< HEAD
 Este proyecto es una implementación de una aplicación web desarrollada con **Vue.js** como parte de una prueba técnica para la posición de Desarrollador Junior Full Stack. La aplicación replica un diseño específico proporcionado en Figma, enfocándose en demostrar habilidades de maquetación y desarrollo frontend. Demo: https://camilogaviria.netlify.app/
+=======
+Este proyecto es una implementación de una aplicación web desarrollada con **Vue.js** como parte de una prueba técnica para la posición de Desarrollador Junior Full Stack. La aplicación replica un diseño específico proporcionado en Figma, enfocándose en demostrar habilidades de maquetación y desarrollo frontend. Demo: https://camilogaviria.netlify.app/sales
+>>>>>>> 8b55c5194c8a0deb1fcfc84ada042c415ed50f41
 
 ## 🚀 Tecnologías Utilizadas
 
