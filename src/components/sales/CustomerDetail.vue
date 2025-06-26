@@ -2,11 +2,11 @@
     <div>
         <div class="p-6 flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:justify-center sm:items-start sm:gap-x-6 sm:gap-y-4 md:flex-row md:flex-wrap md:justify-center md:items-start md:gap-x-8 md:gap-y-6 lg:flex-nowrap lg:justify-between lg:items-start lg:gap-x-6 lg:gap-y-0">
             <div class="flex flex-col items-center text-center gap-4 w-full sm:flex-row sm:items-start sm:text-left sm:space-x-4 sm:w-auto sm:flex-shrink-0 md:flex-row md:items-start md:text-left md:space-x-6 md:w-auto md:flex-shrink-0 lg:pr-6 lg:border-r lg:border-gray-300">
-                <div class="w-20 h-20 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
-                    <i class="mdi mdi-account text-white text-5xl"></i>
+                <div class="w-32 h-32 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+                    <i class="mdi mdi-account text-white text-8xl"></i>
                 </div>
                 <div>
-                    <h2 class="text-xl font-bold text-gray-900">Robbin Williams</h2>
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Robbin Williams</h2>
                     <p class="text-gray-600">+15197092904</p>
                     <div class="w-full border-t border-gray-800 my-2"></div>
                     <span class="inline-block bg-white text-gray-600 text-sm px-3 py-1 font-bold rounded-full">
@@ -55,13 +55,13 @@
             </div>
         </div>
 
-        <div class="p-4 sm:p-6 md:p-6 lg:p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
+        <div class="p-4 sm:p-6 md:p-6 lg:p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 font-bold">
             <div v-for="(card, index) in cards" :key="index">
                 <h4 class="font-bold text-gray-800 mb-2 ml-1">{{ card.title }}:</h4>
                 <div class="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
                     <p class="text-gray-500 text-sm mb-1">N/A</p>
                     <p class="text-500 text-xs">{{ card.date }}</p>
-                    <p class="text-gray-500 text-xs mb-2">{{ card.time }}</p>
+                    <p class="text-xs mb-2">{{ card.time }}</p>
                     <p class="text-gray-500 text-xs font-medium mb-2">{{ card.status }}</p>
                     <p class="text-gray-700 text-xs mb-2">{{ card.note }}</p>
                     <p class="text-gray-600 text-xs">Employee: {{ card.employee }}</p>

@@ -24,7 +24,7 @@
                     </tr>
                 </thead>
                 <tbody class="bg-white text-gray-800">
-                    <tr v-for="(call, index) in calls" :key="index" class="border-b border-gray-200 hover:bg-gray-50 cursor-pointer">
+                    <tr v-for="(call, index) in calls" :key="index" class="border-b border-black hover:bg-gray-50 cursor-pointer">
                         <td class="px-3 py-3">{{ call.contact }}</td>
                         <td class="px-3 py-3">{{ call.matches }}</td>
                         <td class="px-3 py-3">{{ call.extension }}</td>
