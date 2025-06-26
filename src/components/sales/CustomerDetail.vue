@@ -16,28 +16,28 @@
             </div>
 
             <div class="grid grid-cols-2 gap-3 w-full sm:grid-cols-3 sm:gap-3 sm:w-auto sm:flex-grow md:grid-cols-3 md:gap-4 md:w-auto md:flex-grow lg:flex-grow-0 lg:w-auto xl:grid-cols-3">
-                <div class="bg-white p-3 sm:p-4 rounded-lg shadow-sm flex justify-between items-center border border-gray-200">
-                    <span class="text-sm font-bold text-gray-800 mr-2">Tickets</span>
+                <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex justify-between items-center border border-gray-200">
+                    <span class="text-sm font-bold text-gray-800 mr-10">Tickets</span>
                     <span class="text-sm text-gray-900">2</span>
                 </div>
-                <div class="bg-white p-3 sm:p-4 rounded-lg shadow-sm flex justify-between items-center border border-gray-200">
-                    <span class="text-sm font-bold text-gray-800 mr-2">Calls</span>
+                <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex justify-between items-center border border-gray-200">
+                    <span class="text-sm font-bold text-gray-800 mr-10">Calls</span>
                     <span class="text-sm text-gray-900">6</span>
                 </div>
-                <div class="bg-white p-3 sm:p-4 rounded-lg shadow-sm flex justify-between items-center border border-gray-200">
-                    <span class="text-sm font-bold text-gray-800 mr-2">Warranties</span>
+                <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex justify-between items-center border border-gray-200">
+                    <span class="text-sm font-bold text-gray-800 mr-10">Warranties</span>
                     <span class="text-sm text-gray-900">N/A</span>
                 </div>
-                <div class="bg-white p-3 sm:p-4 rounded-lg shadow-sm flex justify-between items-center border border-gray-200">
-                    <span class="text-sm font-bold text-gray-800 mr-2">Quotes</span>
+                <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex justify-between items-center border border-gray-200">
+                    <span class="text-sm font-bold text-gray-800 mr-10">Quotes</span>
                     <span class="text-sm text-gray-900">$123.42</span>
                 </div>
-                <div class="bg-white p-3 sm:p-4 rounded-lg shadow-sm flex justify-between items-center border border-gray-200">
-                    <span class="text-sm font-bold text-gray-800 mr-2">Emails</span>
+                <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex justify-between items-center border border-gray-200">
+                    <span class="text-sm font-bold text-gray-800 mr-10">Emails</span>
                     <span class="text-sm text-gray-900">2</span>
                 </div>
-                <div class="bg-white p-3 sm:p-4 rounded-lg shadow-sm flex justify-between items-center border border-gray-200">
-                    <span class="text-sm font-bold text-gray-800 mr-2">Sales</span>
+                <div class="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex justify-between items-center border border-gray-200">
+                    <span class="text-sm font-bold text-gray-800 mr-10">Sales</span>
                     <span class="text-sm text-gray-900">$123.42</span>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                     <span class="text-sm sm:text-base">Quote, booking or repair</span>
                 </button>
                 
-                <button class="bg-white text-blue-700 px-4 py-3 rounded-full font-medium border border-blue-700 hover:bg-blue-50 flex items-center justify-center space-x-3 w-full sm:flex-grow sm:min-w-0 md:flex-grow">
+                <button class="bg-[#e3f2fd] text-blue-700 px-4 py-3 rounded-full font-medium border border-blue-700 hover:bg-blue-50 flex items-center justify-center space-x-3 w-full sm:flex-grow sm:min-w-0 md:flex-grow">
                     <i class="mdi mdi-swap-horizontal text-xl"></i>
                     <span class="text-sm sm:text-base">Transfer Call</span>
                 </button>
