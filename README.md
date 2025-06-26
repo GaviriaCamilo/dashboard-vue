@@ -43,8 +43,8 @@ Este proyecto es una implementación de una aplicación web desarrollada con **V
 
 ### Prerrequisitos
 
-- Node.js (versión 16 o superior)
-- npm o yarn
+- Node.js (superior a versión 16)
+- npm
 
 ### Pasos de Instalación
 
