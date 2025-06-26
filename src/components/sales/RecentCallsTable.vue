@@ -6,44 +6,43 @@
         </div>
 
         <div class="hidden lg:block overflow-x-auto">
-        <table class="w-full text-sm">
-            <thead class="bg-stone-50 font-bold">
-                <tr>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Contact</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Matches</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Extension</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Phone</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Calling</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Last Activity</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Last Ticket</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Device</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Details</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Repair Items</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Status</th>
-                    <th class="px-3 py-3 text-left text-gray-800 font-semibold">Time</th>
-                </tr>
-            </thead>
-            <tbody class="bg-white text-gray-800">
-                <tr v-for="(call, index) in calls" :key="index" class="border-b border-gray-200 hover:bg-gray-50 cursor-pointer">
-                    <td class="px-3 py-3">{{ call.contact }}</td>
-                    <td class="px-3 py-3">{{ call.matches }}</td>
-                    <td class="px-3 py-3">{{ call.extension }}</td>
-                    <td class="px-3 py-3">{{ call.phone }}</td>
-                    <td class="px-3 py-3">{{ call.calling }}</td>
-                    <td class="px-3 py-3">{{ call.lastActivity }}</td>
-                    <td class="px-3 py-3">{{ call.lastTicket }}</td>
-                    <td class="px-3 py-3">{{ call.device }}</td>
-                    <td class="px-3 py-3">{{ call.details }}</td>
-                    <td class="px-3 py-3">{{ call.repairItems }}</td>
-                    <td class="px-3 py-3">{{ call.status }}</td>
-                    <td class="px-3 py-3 text-teal-600 font-mono">{{ call.time }}</td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="w-full text-sm">
+                <thead class="bg-stone-50 font-bold">
+                    <tr>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Contact</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Matches</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Extension</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Phone</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Calling</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Last Activity</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Last Ticket</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Device</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Details</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Repair Items</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Status</th>
+                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Time</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white text-gray-800">
+                    <tr v-for="(call, index) in calls" :key="index" class="border-b border-gray-200 hover:bg-gray-50 cursor-pointer">
+                        <td class="px-3 py-3">{{ call.contact }}</td>
+                        <td class="px-3 py-3">{{ call.matches }}</td>
+                        <td class="px-3 py-3">{{ call.extension }}</td>
+                        <td class="px-3 py-3">{{ call.phone }}</td>
+                        <td class="px-3 py-3">{{ call.calling }}</td>
+                        <td class="px-3 py-3">{{ call.lastActivity }}</td>
+                        <td class="px-3 py-3">{{ call.lastTicket }}</td>
+                        <td class="px-3 py-3">{{ call.device }}</td>
+                        <td class="px-3 py-3">{{ call.details }}</td>
+                        <td class="px-3 py-3">{{ call.repairItems }}</td>
+                        <td class="px-3 py-3">{{ call.status }}</td>
+                        <td class="px-3 py-3 text-teal-600 font-mono">{{ call.time }}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Vista móvil completa -->
-        <div class="lg:hidden">
+        <div class="block lg:hidden">
             <div class="p-4 space-y-4">
                 <div v-for="(call, index) in calls" :key="index" class="bg-white rounded-lg p-4 text-gray-800 shadow-sm">
                     <div class="flex justify-between items-start mb-3">
@@ -97,31 +96,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="hidden sm:block lg:hidden overflow-x-auto">
-            <table class="w-full text-sm min-w-[800px]">
-                <thead class="bg-stone-50 font-bold">
-                    <tr>
-                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Contact</th>
-                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Phone</th>
-                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Extension</th>
-                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Device</th>
-                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Details</th>
-                        <th class="px-3 py-3 text-left text-gray-800 font-semibold">Time</th>
-                    </tr>
-                </thead>
-                <tbody class="bg-white text-gray-800">
-                    <tr v-for="(call, index) in calls" :key="index" class="border-b border-gray-200 hover:bg-gray-50 cursor-pointer">
-                        <td class="px-3 py-3 font-medium">{{ call.contact }}</td>
-                        <td class="px-3 py-3">{{ call.phone }}</td>
-                        <td class="px-3 py-3">{{ call.extension }}</td>
-                        <td class="px-3 py-3">{{ call.device }}</td>
-                        <td class="px-3 py-3">{{ call.details }}</td>
-                        <td class="px-3 py-3 text-teal-600 font-mono">{{ call.time }}</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </div>
 </template>
