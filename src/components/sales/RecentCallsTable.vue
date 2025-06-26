@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-800 text-white rounded-t-xl">
+    <div class="bg-gray-800 text-white rounded-t-2xl">
         <div class="flex items-center px-4 py-2 border-b border-gray-700">
             <i class="mdi mdi-phone-outline text-lg mr-2"></i>
             <span class="font-medium text-sm sm:text-base">Recent and Active Calls</span>
