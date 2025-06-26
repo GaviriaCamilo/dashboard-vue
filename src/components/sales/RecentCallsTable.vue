@@ -42,6 +42,7 @@
         </table>
         </div>
 
+        <!-- Vista móvil completa -->
         <div class="lg:hidden">
             <div class="p-4 space-y-4">
                 <div v-for="(call, index) in calls" :key="index" class="bg-white rounded-lg p-4 text-gray-800 shadow-sm">
@@ -53,7 +54,11 @@
                         <span class="text-teal-600 font-mono text-sm font-semibold">{{ call.time }}</span>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-3 text-sm">
+                    <div class="grid grid-cols-2 gap-3 text-sm mb-3">
+                        <div>
+                            <span class="text-gray-500 block">Matches:</span>
+                            <span class="font-medium">{{ call.matches }}</span>
+                        </div>
                         <div>
                             <span class="text-gray-500 block">Extension:</span>
                             <span class="font-medium">{{ call.extension }}</span>
@@ -63,6 +68,14 @@
                             <span class="font-medium">{{ call.calling }}</span>
                         </div>
                         <div>
+                            <span class="text-gray-500 block">Last Activity:</span>
+                            <span class="font-medium">{{ call.lastActivity }}</span>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 block">Last Ticket:</span>
+                            <span class="font-medium">{{ call.lastTicket }}</span>
+                        </div>
+                        <div>
                             <span class="text-gray-500 block">Device:</span>
                             <span class="font-medium">{{ call.device }}</span>
                         </div>
@@ -70,11 +83,15 @@
                             <span class="text-gray-500 block">Details:</span>
                             <span class="font-medium">{{ call.details }}</span>
                         </div>
+                        <div>
+                            <span class="text-gray-500 block">Repair Items:</span>
+                            <span class="font-medium">{{ call.repairItems }}</span>
+                        </div>
                     </div>
 
-                    <div class="mt-3 pt-3 border-t border-gray-200">
+                    <div class="pt-3 border-t border-gray-200">
                         <div class="flex justify-between items-center text-sm">
-                            <span class="text-gray-500">Last Ticket: <span class="font-medium text-gray-700">{{ call.lastTicket }}</span></span>
+                            <span class="text-gray-500">Status: <span class="font-medium text-gray-700">{{ call.status }}</span></span>
                             <span class="bg-gray-100 px-2 py-1 rounded text-xs">{{ call.matches }} match{{ call.matches !== 1 ? 'es' : '' }}</span>
                         </div>
                     </div>
