@@ -1,30 +1,28 @@
 <template>
-    <div class="min-h-screen flex flex-col">
-        <div class="mb-4">
-            <h1 class="text-2xl font-bold text-gray-900">Hi Billy Joe!</h1>
-            <p class="text-gray-600 text-sm">Logged in as an employee</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6 items-start">
-            <div class="lg:col-span-2">
-                <ControlPanel />
+    <div class="min-h-screen flex flex-col p-4 sm:p-6">
+        <div class="flex-1 space-y-6">
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-4 sm:gap-6">
+                <div class="xl:col-span-2">
+                    <ControlPanel />
+                </div>
+                <div class="xl:col-span-1">
+                    <RequestAndSearch />
+                </div>
             </div>
-            <div class="lg:col-span-1">
-                <RequestAndSearch />
-            </div>
-        </div>
 
-        <div class="bg-white rounded-lg shadow-sm overflow-hidden flex-grow flex flex-col">
-            <RecentCallsTable />
-            <CustomerDetail class="min-h-0" />
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden flex-1 flex flex-col min-h-0">
+                <RecentCallsTable />
+                <div class="flex-1 min-h-0 overflow-hidden">
+                    <CustomerDetail />
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
-
 <script setup>
-import ControlPanel from '@/components/sales/ControlPanel.vue';
-import RecentCallsTable from '@/components/sales/RecentCallsTable.vue';
-import RequestAndSearch from '@/components/sales/RequestAndSearch.vue';
-import CustomerDetail from '@/components/sales/CustomerDetail.vue';
+import ControlPanel from '@/components/sales/ControlPanel.vue'
+import RecentCallsTable from '@/components/sales/RecentCallsTable.vue'
+import RequestAndSearch from '@/components/sales/RequestAndSearch.vue'
+import CustomerDetail from '@/components/sales/CustomerDetail.vue'
 </script>
