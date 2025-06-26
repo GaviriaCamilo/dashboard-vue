@@ -108,7 +108,7 @@ Este proyecto es una implementación de una aplicación web desarrollada con **V
 ## 📸 Capturas de Pantalla
 
 ### Vista Desktop
-![Dashboard Desktop](/src/assets/screenshots/desktop.png)
+![Dashboard Desktop](/src/assets/screenshots/imgdesktop.png)
 *Vista principal del dashboard en resolución de escritorio*
 
 ### Vista Móvil
